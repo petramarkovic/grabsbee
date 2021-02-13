@@ -1,0 +1,19 @@
+{
+  "name": "grabsbee",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpconfig.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/petramarkovic/grabsbee.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/petramarkovic/grabsbee/issues"
+  },
+  "homepage": "https://github.com/petramarkovic/grabsbee#readme"
+}
