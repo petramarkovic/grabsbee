@@ -7,47 +7,96 @@ $bp-large: 1024px;
 :root {
   --blue-color: #12167a;
   --red-color: #ec1d2e;
-  --neutral-color: #44ee4e;
+  --neutral-color: #4e4e4e;
 
   /* Primary colors */
 
   --primary__color: var(--blue-color);
-  --primary-10: #b9121d;
-  --primary-20: #d41727;
-  --primary-25: #9c9c9c;
-  --primary-30: #740d15;
 
   /* Secondary colors */
 
   --secondary__color: var(--red-color);
+  --secondary-10: #b9121d;
+  --secondary-20: #d51727;
+  --secondary-30: #740d15;
   --secondary-90: #d00505;
 
   /* Neutral colors */
+
+  --neutral-90: #696969;
+  --neutral-60: #828282;
+  --neutral-25: #9c9c9c;
   --neutral-10: #cfcfcf;
-  --text__color: var(--neutral-color);
-  --text__color__invert: #fff;
-  --text__color__muted: var(--neutral-10);
+  --neutral-5: #e8e8e8;
+
+  /* Custom colors */
+
+  --color-white: #fff;
+  --success__color: #32d08d;
+  --error__color: #f14f39;
+  --warning__color: #f1b239;
 
   /* Components */
 
   /* Links */
 
-  --link__color: var(--primary__color);
-  --link__visited__color: var(--primary-10);
-  --link__hover__color: var(--primary-20);
-  --link__active__color: var(--primary-30);
+  --link__color: var(--secondary__color);
+  --link__visited__color: var(--secondary-10);
+  --link__hover__color: var(--secondary-20);
+  --link__active__color: var(--secondary-30);
 
   /* Buttons */
+  /*Primary*/
+
   --button-primary__background: var(--primary__color);
-  --button-primary__border: #fff;
+  --button-primary__border: var(--color-white);
+  --button-primary__color: var(--color-white);
   --button-primary__background--hover: var(--secondary__color);
-  --button-secondary__color: var(--primary__color);
-  --button-secondary__border: var(--primary__color);
-  --button-secondary__background: #fff;
+
+  /*Secondary*/
+
+  --button-secondary__background: var(--color-white);
+  --button-secondary__border: var(--secondary__color);
+  --button-secondary__color: var(--secondary__color);
   
+  /* Text */
+
+  --text__color: #4e4e4e;
+  --text__color__invert: var(--color-white);
+  --text__color__muted: var(--neutral-10);
 
   /* Headings */
 
   --headings__type: "Anton", sans-serif;
   --body__type: "Open Sans", sans-serif;
+
+  /* Forms */
+
+  --input-background-color-default: var(--color-white);
+  --input-background-color-disabled: var(--neutral-5);
+  --input-border-color-default: var(--neutral-25);
+  --input-border-color-focus: var(--neutral-color);
+  --input-border-color-error: var(--secondary-color);
+  --form-label-color: #1a1a1a;
+  --form-placeholder-color: var(--neutral-60);
+  --form-help-txt-color: var(--neutral-90);
+
+  /* Search */
+
+  --search-background-color-default: var(--color-white);
+  --search-placeholder-color: var(--color-white);
+  --search-border-color-default: var(--secondary-color);
+
+  /* Icons */
+
+  --icon-regular-color: var(--neutral-color);
+  --icon-dark-bg-color: var(--color-white);
+  --icon-indicator-color: var(--neutral-color);
+  --icon-indicator-dark-bg-color: #666;
+  --icon-link: var(--secondary-color);
+
+  /* Star ratings */
+
+  --star-rating-color-full: var(--secondary-color);
+  --star-rating-color-default: var(--neutral-10);
 }
