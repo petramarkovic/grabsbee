@@ -1,7 +1,11 @@
 $container-width: 1448px;
 $container-gutter: 1.5rem;
 $bp-large: 1024px;
+$bp-medium: 768px;
+$bp-small: 425px;
 
+@custom-media --small (min-width: $bp-small);
+@custom-media --medium (min-width: $bp-medium);
 @custom-media --large (min-width: $bp-large);
 
 :root {
@@ -32,6 +36,7 @@ $bp-large: 1024px;
   /* Custom colors */
 
   --color-white: #fff;
+  --color-black: #000;
   --success__color: #32d08d;
   --error__color: #f14f39;
   --warning__color: #f1b239;

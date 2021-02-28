@@ -4,355 +4,489 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grabsee - your frisbee web store</title>
+
+    <link href="./style.css" rel="stylesheet" type="text/css"/>
+
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" 
+    rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+
 </head>
 
 <body>
-    <header>
-        <a href="index.html">
-            Grabsee Logo
-        </a>
+    <header class="header">
+        <div class="container header__content">
+            <h1 class="logo">
+                <picture>
+                    <source srcset="assets/images/logo-desktop.svg" media="(min-width: 1024px)" />
+                    <source srcset="/assets/images/grabsbee.svg" />
+                    <img src="/assets/images/grabsbee.svg" alt="Grabsbee Logo" />
+                </picture>
+            </h1>
 
-        <ul>
-            <li>
-                <button>Search</button>
+            <ul class="header__drawers-list">
+                <li class="header__drawers-list__item">
+                    <button class="button--no-styles header__buttons"><span class="icon-search search-btn"></span><span class="visualy-hidden">Search</span></button>
 
-                <div>
-                    <form>
-                        <fieldset>
-                            <legend>Grabsee search form</legend>
-                            <label for="search">Enter here your search term</label>
-                            <input name="search" type="text">
-                            <button>Search it</button>
-                        </fieldset>
-                    </form>
+                    <div class="search-bar visualy-hidden">
+                        <button class="close-btn close-search text-center">Close<span class="icon-x-circle margin-left"></span></button>
+                        <form class="search-form">
+                            <fieldset class="search-form-fieldset">
+                                <legend class="visualy-hidden">Grabsee search form</legend>
+                                <label class="icon-search" for="search"></label>
+                                <input placeholder="Search entire store here..." name="search" type="text">
+                                <button class="visualy-hidden">Search it</button>
+                            </fieldset>
+                        </form>
 
-                    <button>Close</button>
-                </div>
-            </li>
-            <li>
-                <button>Mini Cart</button>
-
-                <section>
-                    <header>
-                        <p># item in Cart</p>
-                    </header>
-                    
-                    <ol>
-                        <li>
-                            <div>
-                                <img src="" alt="Item name 1">
-                            </div>
-
-                            <div>
-                                <h2>
-                                    <a href="">Item name 1</a>
-                                </h2>
-            
-                                <dl>
-                                    <dt>Color</dt>
-                                    <dd>Black</dd>
-                                    <dt>Price</dt>
-                                    <dd>10$</dd>
-                                    <dt>Qty:</dt>
-                                    <dd>
-                                        <form>
-                                            <fieldset>
-                                                <legend>Item qty control</legend>
-                                                <label for="qty"></label>
-                                                <input name="qty" type="number">
-                                            </fieldset>
-                                        </form>
-                                    </dd>
-                                </dl>
-                            </div>
-                        </li>
-                        <li>
-                            <div>
-                                <img src="" alt="Item name 2">
-                            </div>
-
-                            <div>
-                                <h2>
-                                    <a href="">Item name 2</a>
-                                </h2>
-            
-                                <dl>
-                                    <dt>Color</dt>
-                                    <dd>Red</dd>
-                                    <dt>Price</dt>
-                                    <dd>12$</dd>
-                                    <dt>Qty:</dt>
-                                    <dd>
-                                        <form>
-                                            <fieldset>
-                                                <legend>Item qty control</legend>
-                                                <label for="qty"></label>
-                                                <input name="qty" type="number">
-                                            </fieldset>
-                                        </form>
-                                    </dd>
-                                </dl>
-                            </div>
-                        </li>
-                    </ol>
-
-                    <table>
-                        <caption>Your Cart Totals table</caption>
-                        <tbody>
-                            <tr>
-                                <th>Subtotal</th>
-                                <td>$$</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <div>
-                        <button>Proceed to checkout</button>
-                        <a href="" title="Back to Cart page">View and edit cart</a>
                     </div>
-                </div>
-
-                <div>
-                    <strong>You have no items in your shopping cart</strong>
-                </div>
-            </li>
-            <li>
-                <button>Navigation Trigger</button>
-
-                <nav>
-                    <ul>
-                        <li>
-                            <h2>Frisbees</h2>
-
-                            <div>
-                                <h3>Ultimate Frisbees</h3>
-
-                                <ul>
-                                    <li><a href="">Innova Pulsar</a></li>
-                                    <li><a href="">Xcom</a></li>
-                                    <li><a href="">Aviator - Marvel Captian America</a></li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3>Recreational</h3>
-
-                                <ul>
-                                    <li><a href="">Nite</a></li>
-                                    <li><a href="">Yikin</a></li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3>Contact us</h3>
-
-                                <ul>
-                                    <li>Trg Slobode 6</li>
-                                    <li><a href="tel:+385958811630">+385 95 8811630</a></li>
-                                    <li><a href="mailto:filip.svetlicic@gmail.com">filip.svetlicic@gmail.com</a></li>
-                                </ul>
-                            </div>
-
-                        </li>
-                        <li>
-                            <h2>Clothing</h2>
-
-                            <div>
-                                <h3>Ultimate Frisbees</h3>
-
-                                <ul>
-                                    <li><a href="">Innova Pulsar</a></li>
-                                    <li><a href="">Xcom</a></li>
-                                    <li><a href="">Aviator - Marvel Captian America</a></li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3>Recreational</h3>
-
-                                <ul>
-                                    <li><a href="">Nite</a></li>
-                                    <li><a href="">Yikin</a></li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h3>Contact us</h3>
-
-                                <ul>
-                                    <li>Trg Slobode 6</li>
-                                    <li><a href="tel:+385958811630">+385 95 8811630</a></li>
-                                    <li><a href="mailto:filip.svetlicic@gmail.com">filip.svetlicic@gmail.com</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li>
-                            <h2>Accessories</h2>
-                        </li>
-                        <li>
-                            <h2>Contact us</h2>
-                        </li>
-                    </ul>
-
-                    <button>Close Nav</button>
-                </nav>
-            </li>
-        </ul>
-    </header>
-
-    <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Frisbees</a></li>
-        <li><a href="">Ultimate Frisbees</a></li>
-    </ul>
-
-    <main>
-
-        <div>
-            <picture>
-                <source>
-                <img src="" alt="">
-            </picture>
-
-            <ul>
-                <li tabindex="0">                    
-                    <picture>
-                        <source>
-                        <img src="" alt="">
-                    </picture>
                 </li>
-            
-                <li tabindex="0">                    
-                    <picture>
-                        <source>
-                        <img src="" alt="">
-                    </picture>
+                <li class="header__drawers-list__item">
+                    <button class="header__buttons"><span class="icon-shopping-cart minicart-btn"></span><span class="visualy-hidden">Minicart</span></button>
+
+                    <section class="minicart-section visualy-hidden">
+                        <div class="container">
+                            <button class="close-btn close-minicart text-center">Close<span class="icon-x-circle margin-left"></span></button>
+                            <header class="minicart-header">
+                                <p class="text-uppercase"><span class="items-in-cart">1</span> item in Cart</p>
+                                <p>Recently added items</p>
+                            </header>
+                            
+                            <ol class="minicart-list">
+                                <li class="minicart-list__item">
+                                    <div>
+                                        <img src="./assets/images/minicart/minicart-image-1.jpg" alt="Item name 1">
+                                    </div>
+
+                                    <div class="item-details">
+                                        <h2>
+                                            <a href="single-item.html">Innova Pulsar | 
+                                                Major League Ultimate ...</a>
+                                        </h2>
+                    
+                                        <dl>
+                                            <div class="minicart-details__div">
+                                                <dt><strong>Color:</strong></dt>
+                                                <dd>Black</dd>
+                                            </div>
+
+                                            <dt class="visualy-hidden">Price</dt>
+                                            <dd><strong>$21.99</strong></dd>
+
+                                            <div class="minicart-details__div">
+                                                <dt><strong>Qty:</strong></dt>
+                                                <dd>
+                                                    <form>
+                                                        <fieldset class="flex-row">
+                                                            <legend class="visualy-hidden">Item qty control</legend>
+                                                            <label for="qty"></label>
+                                                            <input name="qty" type="number">
+                                                        </fieldset>
+                                                    </form>
+                                                </dd>
+                                            </div>
+
+                                        </dl>
+
+                                        <div class="edit-icons-div">
+                                            <span class="icon-edit"></span><span class="icon-trash"></span>
+                                        </div>
+                                    </div>
+                                
+                                </li>
+
+                                <li class="minicart-list__item">
+                                    <div>
+                                        <img src="./assets/images/minicart/minicart-image-2.jpg" alt="Item name 2">
+                                    </div>
+
+                                    <div class="item-details">
+                                        <h2>
+                                            <a href="single-item.html">Innova Pulsar | 
+                                                Major League Ultimate ...</a>
+                                        </h2>
+                    
+                                        <dl>
+                                            <div class="minicart-details__div">
+                                                <dt><strong>Color:</strong></dt>
+                                                <dd>Black</dd>
+                                            </div>
+
+                                            <dt class="visualy-hidden">Price</dt>
+                                            <dd><strong>$21.99</strong></dd>
+
+                                            <div class="minicart-details__div">
+                                                <dt><strong>Qty:</strong></dt>
+                                                <dd>
+                                                    <form>
+                                                        <fieldset class="flex-row">
+                                                            <legend class="visualy-hidden">Item qty control</legend>
+                                                            <label for="qty"></label>
+                                                            <input name="qty" type="number">
+                                                        </fieldset>
+                                                    </form>
+                                                </dd>
+                                            </div>
+
+                                        </dl>
+
+                                        <div class="edit-icons-div">
+                                            <span class="icon-edit"></span><span class="icon-trash"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+
+                            <table class="minicart-table">
+                                <caption class="visualy-hidden">Your Cart Totals table</caption>
+                                <tbody>
+                                    <tr>
+                                        <th>Cart Subtotal</th>
+                                        <td><strong>$43.98</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <div class="minicart-buttons">
+                                <button class="button button--primary">Proceed to checkout</button>
+                                <a href="" title="Back to Cart page">View and edit cart</a>
+                            </div>
+
+                            <div class="minicart-empty-text visualy-hidden">
+                                <strong>You have no items in your shopping cart</strong>
+                            </div>
+                        </div>
+                    </section>
+                </li>
+                <li class="header__drawers-list__item">
+                    <button class="button-no-style header__buttons visualy-hidden--desktop navbar-btns"><span class="icon-menu navbar-btns"></span><span class="visualy-hidden">Navigation</span></button>
+
+                    <nav class="navbar no-scroll visualy-hidden">
+                        <div class="container">
+
+                            <div class="close-btn-div visualy-hidden--desktop">
+                                <button class="navbar-btns navbar-close-btn"><span>Close</span><span class="icon-x-circle"></span></button>
+                            </div>
+                            
+                            <h2 class="navbar__heading visualy-hidden--desktop">Menu</h2>
+                            <ul class="navbar__list">
+                                <li class="navbar__list__item">
+                                    <h2>Frisbees</h2>
+
+                                    <div class="navbar__div-dropdown">
+                                        <div>
+                                            <h3><span class="icon-plus-circle visualy-hidden--desktop padding-right"></span>Ultimate Frisbee</h3>
+
+                                            <ul class="navbar__list-dropdown text-uppercase">
+                                                <li><a href="">Innova Pulsar</a></li>
+                                                <li><a href="">Xcom</a></li>
+                                                <li><a href="">Aviator - Marvel Captian America</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            <h3><span class="icon-plus-circle visualy-hidden--desktop padding-right"></span>Recreational</h3>
+
+                                            <ul class="navbar__list-dropdown text-uppercase">
+                                                <li><a href="">Nite Ize Flashflight</a></li>
+                                                <li><a href="">Yikun 100G Kids</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            <h3><span class="icon-plus-circle visualy-hidden--desktop padding-right"></span>Contact us</h3>
+
+                                            <ul class="navbar__list-dropdown">
+                                                <li><a><span class="icon-map-pin padding-right"></span>Trg Slobode 6</a></li>
+                                                <li><a href="tel:+385958811630"><span class="icon-phone padding-right"></span>+385 95 8811630</a></li>
+                                                <li><a href="mailto:filip.svetlicic@gmail.com"><span class="icon-mail padding-right"></span>filip.svetlicic@gmail.com</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="navbar__list__item">
+                                    <h2>Clothing</h2>
+
+                                    <div class="navbar__div-dropdown">
+                                        <div>
+                                            <h3><span class="icon-plus-circle visualy-hidden--desktop padding-right"></span>Ultimate Frisbee</h3>
+
+                                            <ul class="navbar__list-dropdown text-uppercase">
+                                                <li><a href="">Innova Pulsar</a></li>
+                                                <li><a href="">Xcom</a></li>
+                                                <li><a href="">Aviator - Marvel Captian America</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            <h3><span class="icon-plus-circle visualy-hidden--desktop padding-right"></span>Recreational</h3>
+
+                                            <ul class="navbar__list-dropdown text-uppercase">
+                                                <li><a href="">Nite Ize Flashflight</a></li>
+                                                <li><a href="">Yikun 100G Kids</a></li>
+                                            </ul>
+                                        </div>
+
+                                        <div>
+                                            <h3><span class="icon-plus-circle visualy-hidden--desktop padding-right"></span>Contact us</h3>
+
+                                            <ul class="navbar__list-dropdown">
+                                                <li><a><span class="icon-map-pin padding-right"></span>Trg Slobode 6</a></li>
+                                                <li><a href="tel:+385958811630"><span class="icon-phone padding-right"></span>+385 95 8811630</a></li>
+                                                <li><a href="mailto:filip.svetlicic@gmail.com"><span class="icon-mail padding-right"></span>filip.svetlicic@gmail.com</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="navbar__list__item">
+                                    <h2>Accessories</h2>
+
+                                        <div class="navbar__div-dropdown">
+                                            <div>
+                                                <h3><span class="icon-plus-circle visualy-hidden--desktop padding-right"></span>Ultimate Frisbee</h3>
+
+                                                <ul class="navbar__list-dropdown text-uppercase">
+                                                    <li><a href="">Innova Pulsar</a></li>
+                                                    <li><a href="">Xcom</a></li>
+                                                    <li><a href="">Aviator - Marvel Captian America</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div>
+                                                <h3><span class="icon-plus-circle visualy-hidden--desktop padding-right"></span>Recreational</h3>
+
+                                                <ul class="navbar__list-dropdown text-uppercase">
+                                                    <li><a href="">Nite Ize Flashflight</a></li>
+                                                    <li><a href="">Yikun 100G Kids</a></li>
+                                                </ul>
+                                            </div>
+
+                                            <div>
+                                                <h3><span class="icon-plus-circle visualy-hidden--desktop padding-right"></span>Contact us</h3>
+
+                                                <ul class="navbar__list-dropdown">
+                                                    <li><a><span class="icon-map-pin padding-right"></span>Trg Slobode 6</a></li>
+                                                    <li><a href="tel:+385958811630"><span class="icon-phone padding-right"></span>+385 95 8811630</a></li>
+                                                    <li><a href="mailto:filip.svetlicic@gmail.com"><span class="icon-mail padding-right"></span>filip.svetlicic@gmail.com</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                </li>
+                                <li class="navbar__list__item">
+                                    <h2>Contact us</h2>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </li>
             </ul>
-            
+        </div>
+    </header>
+
+    <div class="container">
+        <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-list__item"><a href="" class="breadcrumbs__link">Home</a></li>
+            <li class="breadcrumbs-list__item"><a href="" class="breadcrumbs__link">Frisbees</a></li>
+            <li class="breadcrumbs-list__item">Ultimate Freesbes</li>
+        </ul>
+    </div>
+
+    <main class="container">
+        <div class="item__container">
+            <div class="item-images__container">
+                <picture>
+                    <source srcset="assets/images/single-item/item-desktop.jpg" media="(min-width: 1024px)" />
+                    <source srcset="/assets/images/single-item/item-mobile.jpg" />
+                    <img src="/assets/images/single-item/item-mobile.jpg" alt="Product image" />
+                </picture>
+
+                <ul class="item-images__subitem-list margin-bottom">
+                    <li tabindex="0" class="margin-right">                    
+                        <picture>
+                            <source srcset="assets/images/single-item/subitem-desktop.jpg" media="(min-width: 1024px)" />
+                            <source srcset="/assets/images/single-item/subitem-mobile.jpg" />
+                            <img src="/assets/images/single-item/subitem-mobile.jpg" alt="Product image" />
+                        </picture>
+                    </li>
+                
+                    <li tabindex="0">                    
+                        <picture>
+                            <source srcset="assets/images/single-item/subitem-desktop-2.jpg" media="(min-width: 1024px)" />
+                            <source srcset="/assets/images/single-item/subitem-mobile-2.jpg" />
+                            <img src="/assets/images/single-item/subitem-mobile-2.jpg" alt="Product image" />
+                        </picture>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div class="item__details">
+
+                <h1 class="item__heading">Innova Pulsar | 
+                    Major League Ultimate 
+                    Championship 175 
+                    Gram Flying Disc Ultrastar</h1>
+                <p class="margin-0 text-normal">In Stock</p>
+                <p class="text-normal"><strong>Sku: </strong>wh12</p>
+                <a class="link" href="">Be the first to review this product</a>
+                <p class="text-default">As low as: <strong>$21.99</strong></p>
+
+                <dl>
+                    <dt class="text-normal">Color</dt>
+                        <div class="flex">
+                            <dd>
+                                <label class="visualy-hidden" for="black">Black</label>
+                                <input class="color-input" type="color" id="black" name="black"
+                                value="#000">
+                            </dd>
+                            <dd>
+                                <label class="visualy-hidden" for="blue">Blue</label>
+                                <input class="color-input" type="color" id="blue" name="blue"
+                                value="#3734eb">
+                            </dd>
+                            <dd>
+                                <label class="visualy-hidden" for="pink">Pink</label>
+                                <input class="color-input" type="color" id="pink" name="pink"
+                                value="#e64cce">
+                            </dd>
+                        </div>
+                    <dd>
+                        <form  class="item-form">
+                            <fieldset class="item-form__fieldset">
+                                <legend class="visualy-hidden">Qty:</legend>
+                                <label class="padding-right" for="qty">Qty:</label>
+                                <input class="number-input" name="qty" type="number" placeholder="1">
+                            </fieldset>
+                            <button class="button button--primary add-to-cart-btn">Add to cart</button>
+                        </form>
+                    </dd>
+                </dl>
+
+                <div class="item-action">
+                    <small><a class="text-normal" href="" title="Add to wishlist"><span class="icon-heart padding-right text-default"></span>Add to wishlist</a></small>
+                    <small><a class="text-normal" href="" title="Add to compare"><span class="icon-bar-chart padding-right text-default"></span>Add to compare</a></small>
+                </div>
+            </div>
         </div>
 
-        <div>
-
-            <h1>Innova Pulsar | 
-                Major League Ultimate 
-                Championship 175 
-                Gram Flying Disc Ultrastar</h1>
-            <p>In Stock</p>
-            <p>Sku: wh12</p>
-            <a href="">Be the first to review this product</a>
-            <p>As low as: $21.99</p>
-
-            <dl>
-                <dt>Color</dt>
-                <dd>
-                    <label for="black">Black</label>
-                    <input type="color" id="black" name="black"
-                    value="#000">
-                </dd>
-                <dd>
-                    <label for="blue">Blue</label>
-                    <input type="color" id="blue" name="blue"
-                    value="#3734eb">
-                </dd>
-                <dd>
-                    <label for="pink">Pink</label>
-                    <input type="color" id="pink" name="pink"
-                    value="#e64cce">
-                </dd>
-                <dd>
-                    <form>
-                        <fieldset>
-                            <legend>Qty:</legend>
-                            <label for="qty"></label>
-                            <input name="qty" type="number">
-                        </fieldset>
-                        <button>Add to cart</button>
-                    </form>
-                </dd>
-            </dl>
-            <a href="" title="Add to wishlist">Add to wishlist</a>
-            <a href="" title="Add to compare">Add to compare</a>
-
-            <ul>
-                <li tabindex="0">Details
-
-                    <p>Keep shivers at bay with the Circe Hooded Ice Fleece. Ultra-thick, high-pile fleece traps your body heat and keeps cold outside. The drawstring hood and ribbed details add extra coziness and touches of classic style. Its relaxed fit is loose enough to layer comfortably over your shirt.</p>
-                    <p>Full-zip front.
+        <ul class="item-details__list ">
+            <details>
+                <summary tabindex="0"><h2>Details</h2></summary>
+                <div class="item-details__list-content">                    
+                    <p tabindex="0" class="item-details__list-item-text">Keep shivers at bay with the Circe Hooded Ice Fleece. Ultra-thick, high-pile fleece traps your body heat and keeps cold outside. The drawstring hood and ribbed details add extra coziness and touches of classic style. Its relaxed fit is loose enough to layer comfortably over your shirt.</p>
+                    <p tabindex="0" class="item-details__list-item-text">Full-zip front.
                         Three-panel hood.
                         Flatlock seams throughout.
                         Welt hand pockets.
                         Machine wash/dry.</p>
-                </li>
-                <li tabindex="0">More information
+                </div>
 
-                    <dl>
-                        <dt>Style:</dt>
-                        <dd>Insulated, Heavy Duty, Soft Shell, ¼ zip</dd>
-                        <dt>Material:</dt>
-                        <dd>Fleece, Polyester, Wool</dd>
-                        <dt>Pattern:</dt>
-                        <dd>Solid</dd>
-                        <dt>Climate:</dt>
-                        <dd>All-Weather, Cool, Indoor, Spring</dd>
-                    </dl>
-                </li>
-            </ul>
-        </div>
+            </details>
+                
+            <details>
+                <summary tabindex="0"><h2>More information</h2></summary>
+
+                <table class="item-details__list-content" tabindex="0">
+                    <tbody>
+                        <tr>
+                            <th>Style:</th>
+                            <td>Insulated, Heavy Duty, Soft Shell, ¼ zip</td>
+                        </tr>
+                        <tr>
+                            <th>Material:</th>
+                            <td>Fleece, Polyester, Woo</td>
+                        </tr>
+                        <tr>
+                            <th>Pattern:</th>
+                            <td>Solid</td>
+                        </tr>
+                        <tr>
+                            <th>Climate:</th>
+                            <td>All-Weather, Cool, Indoor, Spring</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </details>
+        </ul>
 
     </main>
 
-    <footer>
-        <section>
-            <h2>Newsletter</h2>
-            <p>Sign up for our newsletter and be the first to find out about new products, discounts and more.</p>
+    <footer class="footer">
+        <section class="newsletter__section text-center">
+            <div class="container">
+                <h2>Newsletter</h2>
+                <p>Sign up for our newsletter and be the first to find out about new products, discounts and more.</p>
 
-            <form action="">
-                <fieldset>
-                    <legend>Grabsee Newsletter Form</legend> 
-                    <label for="newsletter">Enter your email in order to become the Grabsee subscriber</label>
+                <form action="">
+                    <fieldset class="newsletter__section__form">
+                        <legend class="visualy-hidden">Grabsee Newsletter Form</legend> 
+                        <label for="newsletter" class="visualy-hidden">Enter your email in order to become the Grabsee subscriber</label>
 
-                    <input placeholder="Enter your email address" name="newsletter" type="email">
-                    <button>Subscibe</button>
-                </fieldset>
-            </form>
+                        <input placeholder="Enter your email address" name="newsletter" type="email">
+                        <button class="button button--primary">Subsrcibe</button>
+                    </fieldset>
+                </form>
+            </div>
         </section>
 
-        <section>
-            <details open>
-                <summary><h2>Categories</h2></summary>
+        <section class="details__section">
+            <div class="container">
+                <details open>
+                    <summary>
+                        <h2>Categories</h2>
+                        <span class="icon-chevron-down visualy-hidden--desktop"></span>
+                    </summary>
 
-                <ul>
-                    <li>
-                        <a href="">Frisbee</a>
-                    </li>
-                    <li>
-                        <a href="">Gear</a>
-                    </li>
-                    <li>
-                        <a href="">Accessories</a>
-                    </li>
-                    <li>
-                        <a href="">Gifts</a>
-                    </li>
-                </ul>
-            </details>
+                    <ul class="details__section__list">
+                        <li class="details__section__list__item">
+                            <a href="">Frisbee</a>
+                        </li>
+                        <li class="details__section__list__item">
+                            <a href="">Gear</a>
+                        </li>
+                        <li class="details__section__list__item">
+                            <a href="">Accessories</a>
+                        </li>
+                        <li class="details__section__list__item">
+                            <a href="">Gifts</a>
+                        </li>
+                    </ul>
 
-            <details>
-                <summary><h2>Contact Us</h2></summary>
+                </details>
 
-                <ul>
-                    <li><address>Trg Slobode 6</address></li>
-                    <li><a href="tel:+385958811630">+385 95 8811630</a></li>
-                    <li><a href="mailto:filip.svetlicic@gmail.com">filip.svetlicic@gmail.com</a></li>
-                </ul>
-            </details>
+                <details open>
+                    <summary>
+                        <h2>Contact Us</h2>
+                        <span class="icon-chevron-down visualy-hidden--desktop"></span>
+                    </summary>
 
+                    <ul class="details__section__list">
+                        <li class="details__section__list__item">
+                            <address><span class="icon-map-pin"></span>Trg Slobode 6</address>
+                        </li>
+                        <li class="details__section__list__item">
+                            <a href="tel:+385958811630"><span class="icon-phone"></span>+385 95 8811630</a>
+                        </li>
+                        <li class="details__section__list__item">
+                            <a href="mailto:filip.svetlicic@gmail.com"><span class="icon-mail"></span>filip.svetlicic@gmail.com</a>
+                        </li>
+                    </ul>
+
+                </details>
+            </div>
         </section>
 
-        <div>
+        <div class="copyright text-center">
             <small>Copyright &reg; 2021 Grabsbee</small>
         </div>
     </footer>
+
+<script src="./assets/js/app.js"></script>
 </body>
 </html>

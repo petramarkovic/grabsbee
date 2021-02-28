@@ -30,7 +30,7 @@ button {
 .button--primary {
   color: var(--button-primary__color);
   background: var(--button-primary__background);
-  border: var(--button-primary__border);
+  border: var(--button-primary__border) 1px solid;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
 
   &:hover {
@@ -41,7 +41,7 @@ button {
 .button--secondary {
   color: var(--button-secondary__color);
   background: var(--button-secondary__background);
-  border: var(--button-secondary__border);
+  border: var(--button-secondary__border) 1px solid;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
 
 }
@@ -53,4 +53,8 @@ button {
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+}
+
+.button-large {
+  width: 336px;
 }

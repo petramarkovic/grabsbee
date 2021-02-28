@@ -4,7 +4,19 @@
 
 .no-scroll {
   overflow: hidden;
+  overflow-y: hidden;
   height: 100%;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-row {
+  @mixin flex row, center, center, nowrap;
 }
 
 .visualy-hidden {
@@ -15,4 +27,77 @@
   @media (--large) {
     @mixin no-display;
   }
+}
+
+.visualy-hidden--mobile {
+  @media (--medium) {
+    @mixin no-display;
+  }
+
+  @media (--small) {
+    @mixin no-display;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.margin-left {
+  margin-left: 0.6rem;
+}
+
+.margin-right {
+  margin-right: 0.75rem;
+}
+
+.margin-top {
+  margin-top: 1.25rem;
+}
+
+.margin-bottom {
+  margin-bottom: 1.25rem
+}
+
+.padding-right {
+  padding-right: 7px;
+}
+
+.text-normal {
+  color: var(--primary__color);
+  text-decoration: none;
+}
+
+.text-default {
+  color: var(--neutral-color);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: normal;
+  margin-top: 0.5rem;
+}
+
+.li-text {
+  color: var(--neutral-color);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  box-shadow: 0px 1px 0px var(--neutral-10);
+  padding: 0.5rem 0;
+}
+
+.li-subitem {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: var(--body__type);
+  padding: 0.3rem 0;
 }

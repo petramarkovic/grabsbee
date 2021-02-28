@@ -1,0 +1,34 @@
+.breadcrumbs-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1.3rem 0;
+
+  &:last-child {
+    color: var(--text__color);
+    font-weight: 700;
+  }
+
+  @media (--large) {
+    margin-top: 4.5rem;
+  }
+}
+
+.breadcrumbs-list__item {
+  font-size: 12px;
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+
+    &:after {
+      content: ">";
+      margin-left: 0.6rem;
+    }
+  }
+}
+
+.breadcrumbs__link {
+  color: var(--link__color);
+  text-decoration: none;
+  font-weight: 400;
+}

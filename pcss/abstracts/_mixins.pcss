@@ -140,3 +140,35 @@
     clear: both;
   }
 }
+
+@define-mixin aspect-ratio-calc-old $height, $width {
+  height: 0;
+  padding-bottom: calc(($height / $width) * 100%);
+}
+
+@define-mixin font-12 {
+  font-size: 12px;
+  line-height: 21px;
+}
+
+@define-mixin chevrons-white {
+  background-image: url("../../assets/images/chevron-down-white.svg");
+  background-position: center right pxtorem(12px);
+  background-size: pxtorem(10px);
+  background-repeat: no-repeat;
+
+  &:hover {
+    background-image: url("../../assets/images/chevron-up-white.svg");
+  }
+}
+
+@define-mixin chevrons {
+  background-image: url("../../assets/images/chevron-down.svg");
+  background-position: center right pxtorem(12px);
+  background-size: pxtorem(10px);
+  background-repeat: no-repeat;
+
+  &:hover {
+    background-image: url("../../assets/images/chevron-up.svg");
+  }
+}

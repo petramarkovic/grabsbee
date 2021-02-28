@@ -1,6 +1,11 @@
 
 .header {
   background-color: var(--primary__color);
+  height: 63px;
+
+  @media (--large) {
+    height: 96px;
+  }
 }
 
 .header__buttons {
@@ -15,6 +20,10 @@
   align-items: center;
   padding-top: pxtorem(21);
   padding-bottom: pxtorem(21);
+
+  @media (--large) {
+    height: 100%;
+  }
 }
 
 .header__drawers-list {
@@ -23,8 +32,18 @@
 
 .header__drawers-list__item {
   display: inline-block;
+
+  &:last-child {
+    @media (--large){
+      position: absolute;
+      left: 0;
+      top: 97px;
+      width: 101%;
+    }
+  }
 }
 
 .logo {
   margin-bottom: 0;
+  width: auto;
 }
